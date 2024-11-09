@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Websocket Server",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "David Bell",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-ws": "^5.0.2",
+    "typescript": "^5.6.3"
+  }
+}
