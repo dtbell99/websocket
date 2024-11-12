@@ -12,7 +12,8 @@ export default function DetailBar({
       className="DetailBar"
       animate={{ width: width, marginRight: marginRight }}
     >
-      <h1>Detail</h1>
+      <div className="DetailMenu">menu</div>
+      <div className="DetailContent">content</div>
     </motion.div>
   );
 }

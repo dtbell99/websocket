@@ -14,26 +14,59 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  /* margin-left:10px;
+  margin-right:10px;
+  margin-top: 0px; */
+  margin:0px;
+}
+
 .SideBar {
-  background-color: #f1f1f1;
-  border-right: .1em solid #c1c1c1;
+  background-color: #f6f8fb;
+  border-right: .1em solid #dce2eb;
   height:100vh;
   overflow: auto;
+  width: 0px;
+  margin-left: 0px;
 }
 
 .Content {
   height:100vh;
+  width:100vh;
   flex-grow: 2;
+  overflow: auto;
+}
+
+.ContentMenuBar {
+  height:45px;
+  display: flex;
+  border-bottom: .1em solid #dce2eb;
+  overflow: auto;
+  /* padding:5px; */
+  background-color: #f6f8fb;
+}
+
+.ContentWindow {
+  padding:20px;
+  /* border:.1em solid red; */
 }
 
 .DetailBar {
-  background-color: #f1f1f1;
-  border-left: .1em solid #c1c1c1;
+  background-color: #f6f8fb;
+  border-left: .1em solid #dce2eb;
   height:100vh;
-  margin-right:-10px;
+  width:0px;
+  margin-right: 0px;
+  overflow: auto;
+}
+
+.DetailMenu {
+  background-color: #f6f8fb;
+  border-bottom: .1em solid #dce2eb;
+  height: 45px;
 }
 
 #root {
   display:flex;
-  border:.1em solid black;
+  /* border:.1em solid black; */
 }

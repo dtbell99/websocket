@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 
 export default function SideBar({
-  sideBarMaxWidth,
+  sideBarWidth,
+  marginLeft,
 }: {
-  sideBarMaxWidth: number;
+  sideBarWidth: number;
+  marginLeft: string;
 }) {
   const content = () => {
     const records: string[] = [];
@@ -14,7 +16,10 @@ export default function SideBar({
   };
 
   return (
-    <motion.div className="SideBar" animate={{ width: sideBarMaxWidth }}>
+    <motion.div
+      className="SideBar"
+      animate={{ width: sideBarWidth, marginLeft: marginLeft }}
+    >
       <h1>Sidebar</h1>
       <hr />
       <ul>{content()}</ul>
