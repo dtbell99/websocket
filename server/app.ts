@@ -20,9 +20,7 @@ app.post("/api/conversation", async (req: Request, res: Response) => {
     let chars = Math.floor(Math.random() * 300);
     if (chars < 100) chars += 100;
     //if (chars === 0) chars = 100;
-    console.log("chars:", chars);
     obj.content = obj.content.substring(0, chars);
-    console.log("Sending Obj:" + cntr);
     res.write(JSON.stringify(obj));
     await sleep(2000);
   }

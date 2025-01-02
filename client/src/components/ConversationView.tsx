@@ -53,8 +53,13 @@ export default function ConversationView() {
   };
 
   useEffect(() => {
+    if (inputRef?.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
+  useEffect(() => {
     if (divRef?.current) {
-      console.log("scrolling");
       divRef.current.scrollIntoView({ behavior: "smooth" });
     }
   });
