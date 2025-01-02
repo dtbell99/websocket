@@ -70,3 +70,30 @@ body {
   display:flex;
   /* border:.1em solid black; */
 }
+
+.AskInput {
+  max-width: 400px;
+  margin: 5px;
+}
+
+.AskContainer {
+  display: flex;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ConversationItem {
+  border: .1em solid #dce2eb;
+  border-radius: 5px;
+  margin:10px;
+  padding:10px;
+}
+
+.ConversationItemRole {
+  font-weight: 200;
+}
+
+.ConversationItemContent {
+  padding:2px;
+}

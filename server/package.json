@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "dev": "npm run build && node app.js"
   },
   "author": "David Bell",
   "license": "MIT",

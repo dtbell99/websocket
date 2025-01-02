@@ -1,6 +1,6 @@
-import SideBar from "./SideBar";
-import Content from "./Content";
-import DetailBar from "./DetailBar";
+import SideBar from "../components/SideBar";
+import Content from "../components/Content";
+import DetailBar from "../components/DetailBar";
 import { useState } from "react";
 
 function App() {

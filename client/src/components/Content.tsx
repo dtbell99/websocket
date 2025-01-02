@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { LayoutSidebar, LayoutSidebarReverse } from "react-bootstrap-icons";
+import ConversationView from "./ConversationView";
 
 export default function Content({ hideShow }: { hideShow: Function }) {
   useEffect(() => {}, []);
@@ -27,7 +28,9 @@ export default function Content({ hideShow }: { hideShow: Function }) {
           />
         </div>
       </div>
-      <div className="ContentWindow">Content</div>
+      <div className="ContentWindow">
+        <ConversationView />
+      </div>
     </div>
   );
 }
