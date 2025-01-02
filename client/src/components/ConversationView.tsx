@@ -25,7 +25,6 @@ export default function ConversationView() {
   });
 
   const ask = async () => {
-    console.log("ask");
     const payload: ConversationRequest = {
       question,
     };
@@ -63,8 +62,6 @@ export default function ConversationView() {
       divRef.current.scrollIntoView({ behavior: "smooth" });
     }
   });
-
-  console.log("Render::ConversationView");
 
   return (
     <div className="Conversation">

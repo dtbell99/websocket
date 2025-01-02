@@ -11,7 +11,6 @@ function App() {
 
   function hideShow(view: string) {
     if (view === "sidebar") {
-      console.log("sidebar");
       if (detailWidth > 0) {
         setDetailWidth(0);
         setDetailMarginRight("-10px");
@@ -20,7 +19,6 @@ function App() {
       setSideBarWidth(sideBarWidth > 0 ? 0 : 300);
     }
     if (view === "detail") {
-      console.log("detail");
       if (sideBarWidth > 0) {
         setSideBarWidth(0);
         setSideBarMarginLeft("0px");

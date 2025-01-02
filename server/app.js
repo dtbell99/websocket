@@ -31,14 +31,12 @@ app.post("/api/conversation", (req, res) => __awaiter(void 0, void 0, void 0, fu
         if (chars < 100)
             chars += 100;
         //if (chars === 0) chars = 100;
-        console.log("chars:", chars);
         obj.content = obj.content.substring(0, chars);
-        console.log("Sending Obj:" + cntr);
         res.write(JSON.stringify(obj));
         yield sleep(2000);
     }
     res.end();
 }));
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+    console.log(`API listening on port ${port}`);
 });
