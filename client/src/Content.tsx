@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import { LayoutSidebar, LayoutSidebarReverse } from "react-bootstrap-icons";
 
 export default function Content({ hideShow }: { hideShow: Function }) {
+  useEffect(() => {}, []);
+
   return (
     <div className="Content">
       <div className="ContentMenuBar">

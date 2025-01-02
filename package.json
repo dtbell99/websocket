@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "i": "^0.3.7",
+    "lorem-ipsum": "^2.0.8",
+    "npm": "^10.9.2"
+  }
+}
